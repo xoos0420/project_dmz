@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Pretendard-Regular;
+}
+
+body *{
+    box-sizing: border-box;
+    font-family: Pretendard-Regular;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid rgb(222, 228, 243);
+    /* padding: 12px 0px; */
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+/* header img{
+    width: 30%;
+} */
+
+#introduce p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+#infor_img{
+    width: 30px;
+    height: 30px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    overflow: scroll;
+}
+
+#main{
+    margin: 40px 0 80px;
+    padding: 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#introduce{
+    display: flex;
+    border: 1px solid rgb(209, 215, 237);
+    border-radius: 8px;
+    background: rgb(242, 247, 255);
+    padding: 32px 31px;
+    gap: 30px;
+    margin-bottom: 10px;
+} 
+
+#exam_question{
+    clear: both;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 8px;
+}
+#exam_question img{
+    width: 30px;
+    height: 30px;
+}
+#exam_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+#exam_list button{
+    color: blueviolet;
+    background-color: white;
+    border: 1px solid rgb(222, 228, 243);
+    border-radius: 21px;
+}
+
+#text_container{
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid rgb(222, 228, 243);
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+#input_text{
+    border: 1px solid rgb(209, 215, 237);
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    height: 46px;
+    border-radius: 0.75rem;
+    width: 100%;
+}
+#input_text textarea{
+    width: 100%; 
+    border: none;
+    font-size: 0.9rem;
+    height: 24px;
+    resize: none;
+}
+#input_text textarea:focus {
+    outline: none;
+}
+#chat_zone{
+    display: flex;
+    flex-direction: column;
+}
+
+#input_text div{
+    padding: 10px;
+}
+
+#send_btn{
+    width: 32px;
+    height: 32px;
+    padding: 4px 0 4px 4px;
+    border: none;
+    background-color: white;
+    align-items: center;
+}
+
+#send_btn img{
+    width: 15px;
+    height: 15px;
+}
+
+.ask{
+    background-color: rgb(100, 70, 255);
+    margin-top: 20px;
+    padding: 18px 24px 20px;
+    border-radius: 10px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    align-self: flex-end;
+}
+.ask p{
+    margin: 0 0 0 0;
+}
+
+.answer{
+    background-color: rgb(242, 247, 255);
+    border-radius: 10px;
+    padding: 20px 24px;
+    align-self: flex-start;
+}
+
+.answer p{
+    margin: 0 0 0 0;
+}
+
+.dmz_icon{
+    display: flex;
+    font-size: 15px;
+    color: rgb(80, 85, 103);
+    font-weight: 600;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.dmz_icon img{
+    width: 24px;
+    height: 30px;
+}
+
+.dmz_icon p{
+    margin: 0 0 0 0;
+}

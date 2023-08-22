@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMZ-MASK</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <div id="all">
+        <header>
+            <img src="DMZ_로고.png" alt="">
+        </header>
+        <div id="container">
+            <div id="main">
+                <div id="introduce">
+                    <img id="infor_img" src="logo_D.png" alt="information">
+                    <p>안녕하세요! 모두를 위한 신조어 번역기 DMZ입니다. 궁금한 문장을 입력해주세요.</p>
+                </div>
+                <div id = 'temp_chat_zone'>
+
+
+                </div>
+                <div id="chat_zone">
+                    
+                </div>
+                <div id="exam_question">
+                    <img src="chat.png" alt="말풍선">
+                    <p>궁금하신 신조어가 있으신가요?</p>
+                </div>
+                <!-- 신조어 길이의 따라 좀 비어보이기도 하고, 꽉차보이기도함 -->
+                <div id="exam_list">
+                    <button id="but1"></button>
+                    <button id="but2"></button>
+                    <button id="but3"></button>
+                </div>
+            </div>
+        </div>
+        <div id="text_container">
+            <div id="input_text">
+                <textarea name="" id="input_sentence" cols="30" rows="10" placeholder="신조어가 포함된 문장을 입력해보세요."></textarea>
+                <button id="send_btn"><img id="send_btn_img" src="send.png" alt="보내기" onclick="send_Sinjoword()"></button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        function firstGetRandomValue() {
+            const header_random1 = document.getElementById('but1');
+            const header_random2 = document.getElementById('but2');
+            const header_random3 = document.getElementById('but3');
+
+            header_random1.addEventListener(('click'), () => {
+                random_click('1')
+            });
+            header_random2.addEventListener(('click'), () => {
+                random_click('2')
+            });
+            header_random3.addEventListener(('click'), () => {
+                random_click('3')
+            });
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'http://127.0.0.1:5000/', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        const result = JSON.parse(xhr.responseText);
+                        document.getElementById('but1').innerText = result.random1[0];
+                        document.getElementById('but2').innerText = result.random2[0];
+                        document.getElementById('but3').innerText = result.random3[0];
+                    } else {
+                        console.error('Error:', xhr.status);
+                        document.getElementById('but1').innerText = 'Error occurred. Please try again.';
+                    }
+                }
+            };
+            xhr.send();
+        }
+        window.onload = function () {firstGetRandomValue()};
+    </script>
+</html> 

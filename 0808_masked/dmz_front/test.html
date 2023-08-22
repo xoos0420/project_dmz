@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textarea 초기화</title>
+</head>
+<body>
+
+    <textarea id="myTextarea" rows="4" cols="50"></textarea>
+
+    <script>
+        const textarea = document.getElementById("myTextarea");
+
+        textarea.addEventListener("keydown", function(event) {
+            // 엔터키의 keyCode는 13입니다.
+            if (event.keyCode === 13) {
+                event.preventDefault(); // 엔터키 기본 동작(개행) 방지
+                textarea.value = ""; // textarea 내용 초기화
+            }
+        });
+    </script>
+
+</body>
+</html>
