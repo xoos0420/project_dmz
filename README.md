@@ -6,8 +6,7 @@
 * 챗봇을 위한 흐름도
 * GPT API Vs DMZ 챗봇 비교
 
-
-<div align=center><h1>📚 STACKS</h1></div>
+## 3. STACKS
 <div align="center">
   <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white">
   <img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white">
