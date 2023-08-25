@@ -6,6 +6,13 @@
 * 챗봇을 위한 흐름도
 * GPT API Vs DMZ 챗봇 비교
 
+## 2. INSTALL
+```
+!git clone https://github.com/xoos0420/dmz
+%cd 
+```
+
+
 ## 3. STACKS
 <div align="center">
   <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white">
