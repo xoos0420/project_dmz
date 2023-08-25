@@ -1,4 +1,6 @@
 ## 1. DMZ
+<img width="80%" src="https://github.com/xoos0420/dmz/assets/131944211/7edead08-443b-48af-873b-42170c5e8f9a"/>
+
 * DMZ 팀
 * 개발 기간 : 2022.07 ~ 2022.08
 * 신조어 번역 챗봇
