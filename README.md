@@ -9,9 +9,14 @@
 ## 2. INSTALL
 ```
 !git clone https://github.com/xoos0420/dmz
-%cd 
+%cd 0808_BERT_GPT
+!pip install -r requirements.txt
 ```
-
+```
+!git clone https://github.com/xoos0420/dmz
+%cd 0808_masked
+!pip install -r requirements.txt
+```
 
 ## 3. STACKS
 <div align="center">
