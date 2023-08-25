@@ -13,7 +13,7 @@ DMZ는 2022년 7월부터 8월까지 개발된 프로젝트입니다.<br>
 이를 위해 GPT 언어모델과 같은 다양한 언어모델을 활용하여 챗봇을 구현하였습니다.<br>
 사용자들이 입력한 문장을 챗봇이 이해하고, 해당 신조어의 의미를 파악하여 사용자에게 번역 결과를 제공합니다.<br>
 
-## 3. 챗봇흐름도
+## 3. 챗봇 흐름도
 <div align="center">
   <img width="80%" height="80%" src="https://github.com/xoos0420/dmz/assets/131944211/312d9305-745c-4206-881b-c3268785c694"/>
 </div>
@@ -29,18 +29,30 @@ GPT API: GPT 언어모델은 강력한 자연어 이해 능력을 가지고 있�
 DMZ 챗봇: DMZ 팀의 챗봇은 신조어 번역에 특화된 기능을 가지고 있으며, 사용자가 신조어와 관련된 문맥을 제공할 경우 보다 정확한 번역 결과를 제공할 수 있습니다.
 
 ## 5. INSTALL
+gpt api
 ```
 !git clone https://github.com/xoos0420/dmz
 %cd 0808_BERT_GPT
 !pip install -r requirements.txt
+
+%cd dmz_back
+uvicorn app:app --reload
 ```
+masked
 ```
 !git clone https://github.com/xoos0420/dmz
 %cd 0808_masked
 !pip install -r requirements.txt
-```
 
-## 6. STACKS
+%cd dmz_back
+uvicorn app:app --port 5000 --reload
+```
+## 6. 작동
+<div align="center">
+  <img width="40%" height="20%" src="https://github.com/xoos0420/dmz/assets/131944211/5fa46d4d-6326-4a6a-8a89-7d9a0b3a0b29"/>
+</div>
+
+## 7. STACKS
 <div align="center">
   <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white">
   <img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white">
@@ -58,7 +70,6 @@ DMZ 챗봇: DMZ 팀의 챗봇은 신조어 번역에 특화된 기능을 가지�
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <br>
 
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/fastapi-009608?style=for-the-badge&logo=fastapi&logoColor=white">
   <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 </div>
