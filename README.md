@@ -1,7 +1,5 @@
 ## 1. DMZ
-<div style="text-align: center;">
-  <img width="15%" height="15%" src="https://github.com/xoos0420/dmz/assets/131944211/7edead08-443b-48af-873b-42170c5e8f9a"/>
-</div>
+<img width="15%" height="15%" src="https://github.com/xoos0420/dmz/assets/131944211/7edead08-443b-48af-873b-42170c5e8f9a"/>
 
 * DMZ 팀
 * 개발 기간 : 2022.07 ~ 2022.08
