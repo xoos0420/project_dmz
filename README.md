@@ -13,7 +13,7 @@ DMZ는 2022년 7월부터 8월까지 개발된 프로젝트입니다.<br>
 이를 위해 GPT 언어모델과 같은 다양한 언어모델을 활용하여 챗봇을 구현하였습니다.<br>
 사용자들이 입력한 문장을 챗봇이 이해하고, 해당 신조어의 의미를 파악하여 사용자에게 번역 결과를 제공합니다.<br>
 
-## 3. 챗봇 흐름도
+## 3. Information Architecture
 <div align="center">
   <img width="80%" height="80%" src="https://github.com/xoos0420/dmz/assets/131944211/312d9305-745c-4206-881b-c3268785c694"/>
 </div>
